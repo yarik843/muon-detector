@@ -1,5 +1,116 @@
 // rotations
 
+G4RotationMatrix* scint_rot_1 = new G4RotationMatrix();
+scint_rot_1->rotateX(0.*deg);
+scint_rot_1->rotateY(0.*deg);
+scint_rot_1->rotateZ(0.*deg);
+
+G4RotationMatrix* scint_rot_2 = new G4RotationMatrix();
+scint_rot_2->rotateX(180.*deg);
+scint_rot_2->rotateY(0.*deg);
+scint_rot_2->rotateZ(0.*deg);
+
+G4RotationMatrix* scint_rot_3 = new G4RotationMatrix();
+scint_rot_3->rotateX(0.*deg);
+scint_rot_3->rotateY(90.*deg);
+scint_rot_3->rotateZ(0.*deg);
+
+G4RotationMatrix* scint_rot_4 = new G4RotationMatrix();
+scint_rot_4->rotateX(0.*deg);
+scint_rot_4->rotateY(-90.*deg);
+scint_rot_4->rotateZ(0.*deg);
+
+G4RotationMatrix* scint_rot_5 = new G4RotationMatrix();
+scint_rot_5->rotateX(0.*deg);
+scint_rot_5->rotateY(90.*deg);
+scint_rot_5->rotateZ(45.*deg);
+
+G4RotationMatrix* scint_rot_6 = new G4RotationMatrix();
+scint_rot_6->rotateX(0.*deg);
+scint_rot_6->rotateY(-90.*deg);
+scint_rot_6->rotateZ(45.*deg);
+
+G4RotationMatrix* scint_rot_7 = new G4RotationMatrix();
+scint_rot_7->rotateX(0.*deg);
+scint_rot_7->rotateY(90.*deg);
+scint_rot_7->rotateZ(90.*deg);
+
+G4RotationMatrix* scint_rot_8 = new G4RotationMatrix();
+scint_rot_8->rotateX(0.*deg);
+scint_rot_8->rotateY(-90.*deg);
+scint_rot_8->rotateZ(90.*deg);
+
+G4RotationMatrix* scint_rot_9 = new G4RotationMatrix();
+scint_rot_9->rotateX(0.*deg);
+scint_rot_9->rotateY(90.*deg);
+scint_rot_9->rotateZ(135.*deg);
+
+G4RotationMatrix* scint_rot_10 = new G4RotationMatrix();
+scint_rot_10->rotateX(0.*deg);
+scint_rot_10->rotateY(-90.*deg);
+scint_rot_10->rotateZ(135.*deg);
+
+G4RotationMatrix* scint_rot_11 = new G4RotationMatrix();
+scint_rot_11->rotateX(-41.5*deg);
+scint_rot_11->rotateY(-90.*deg);
+scint_rot_11->rotateZ(0.*deg);
+
+G4RotationMatrix* scint_rot_12 = new G4RotationMatrix();
+scint_rot_12->rotateX(41.5*deg);
+scint_rot_12->rotateY(90.*deg);
+scint_rot_12->rotateZ(0.*deg);
+
+G4RotationMatrix* scint_rot_13 = new G4RotationMatrix();
+scint_rot_13->rotateX(-41.5*deg);
+scint_rot_13->rotateY(90.*deg);
+scint_rot_13->rotateZ(0.*deg);
+
+G4RotationMatrix* scint_rot_14 = new G4RotationMatrix();
+scint_rot_14->rotateX(41.5*deg);
+scint_rot_14->rotateY(-90.*deg);
+scint_rot_14->rotateZ(0.*deg);
+
+G4RotationMatrix* scint_rot_15 = new G4RotationMatrix();
+scint_rot_15->rotateX(43.3*deg);
+scint_rot_15->rotateY(-60.*deg);
+scint_rot_15->rotateZ(0.*deg);
+
+G4RotationMatrix* scint_rot_16 = new G4RotationMatrix();
+scint_rot_16->rotateX(-43.3*deg);
+scint_rot_16->rotateY(120.*deg);
+scint_rot_16->rotateZ(0.*deg);
+
+G4RotationMatrix* scint_rot_17 = new G4RotationMatrix();
+scint_rot_17->rotateX(43.3*deg);
+scint_rot_17->rotateY(60.*deg);
+scint_rot_17->rotateZ(0.*deg);
+
+G4RotationMatrix* scint_rot_18 = new G4RotationMatrix();
+scint_rot_18->rotateX(-43.3*deg);
+scint_rot_18->rotateY(-120.*deg);
+scint_rot_18->rotateZ(0.*deg);
+
+G4RotationMatrix* scint_rot_19 = new G4RotationMatrix();
+scint_rot_19->rotateX(-43.3*deg);
+scint_rot_19->rotateY(-60.*deg);
+scint_rot_19->rotateZ(0.*deg);
+
+G4RotationMatrix* scint_rot_20 = new G4RotationMatrix();
+scint_rot_20->rotateX(43.3*deg);
+scint_rot_20->rotateY(120.*deg);
+scint_rot_20->rotateZ(0.*deg);
+
+G4RotationMatrix* scint_rot_21 = new G4RotationMatrix();
+scint_rot_21->rotateX(-43.3*deg);
+scint_rot_21->rotateY(60.*deg);
+scint_rot_21->rotateZ(0.*deg);
+
+G4RotationMatrix* scint_rot_22 = new G4RotationMatrix();
+scint_rot_22->rotateX(43.3*deg);
+scint_rot_22->rotateY(-120.*deg);
+scint_rot_22->rotateZ(0.*deg);
+
+
 
 
 //scint 1
@@ -26,7 +137,7 @@ G4Cons* scint_object_1 = new GCons(	"scint_place_1",
 
 
 G1PVPlacement* scint_place_1 = nullptr;
-	scint_place_1 = new G1PVPlacement	( scint_rot1,
+	scint_place_1 = new G1PVPlacement	( scint_rot_1,
 									G1ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_1",
 									scint_logic_1,
@@ -63,7 +174,7 @@ G4Cons* scint_object_2 = new GCons(	"scint_place_2",
 
 
 G2PVPlacement* scint_place_2 = nullptr;
-	scint_place_2 = new G2PVPlacement	( scint_rot2,
+	scint_place_2 = new G2PVPlacement	( scint_rot_2,
 									G2ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_2",
 									scint_logic_2,
@@ -100,7 +211,7 @@ G4Cons* scint_object_3 = new GCons(	"scint_place_3",
 
 
 G3PVPlacement* scint_place_3 = nullptr;
-	scint_place_3 = new G3PVPlacement	( scint_rot3,
+	scint_place_3 = new G3PVPlacement	( scint_rot_3,
 									G3ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_3",
 									scint_logic_3,
@@ -137,7 +248,7 @@ G4Cons* scint_object_4 = new GCons(	"scint_place_4",
 
 
 G4PVPlacement* scint_place_4 = nullptr;
-	scint_place_4 = new G4PVPlacement	( scint_rot4,
+	scint_place_4 = new G4PVPlacement	( scint_rot_4,
 									G4ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_4",
 									scint_logic_4,
@@ -174,7 +285,7 @@ G4Cons* scint_object_5 = new GCons(	"scint_place_5",
 
 
 G5PVPlacement* scint_place_5 = nullptr;
-	scint_place_5 = new G5PVPlacement	( scint_rot5,
+	scint_place_5 = new G5PVPlacement	( scint_rot_5,
 									G5ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_5",
 									scint_logic_5,
@@ -211,7 +322,7 @@ G4Cons* scint_object_6 = new GCons(	"scint_place_6",
 
 
 G6PVPlacement* scint_place_6 = nullptr;
-	scint_place_6 = new G6PVPlacement	( scint_rot6,
+	scint_place_6 = new G6PVPlacement	( scint_rot_6,
 									G6ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_6",
 									scint_logic_6,
@@ -248,7 +359,7 @@ G4Cons* scint_object_7 = new GCons(	"scint_place_7",
 
 
 G7PVPlacement* scint_place_7 = nullptr;
-	scint_place_7 = new G7PVPlacement	( scint_rot7,
+	scint_place_7 = new G7PVPlacement	( scint_rot_7,
 									G7ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_7",
 									scint_logic_7,
@@ -285,7 +396,7 @@ G4Cons* scint_object_8 = new GCons(	"scint_place_8",
 
 
 G8PVPlacement* scint_place_8 = nullptr;
-	scint_place_8 = new G8PVPlacement	( scint_rot8,
+	scint_place_8 = new G8PVPlacement	( scint_rot_8,
 									G8ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_8",
 									scint_logic_8,
@@ -322,7 +433,7 @@ G4Cons* scint_object_9 = new GCons(	"scint_place_9",
 
 
 G9PVPlacement* scint_place_9 = nullptr;
-	scint_place_9 = new G9PVPlacement	( scint_rot9,
+	scint_place_9 = new G9PVPlacement	( scint_rot_9,
 									G9ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_9",
 									scint_logic_9,
@@ -359,7 +470,7 @@ G4Cons* scint_object_10 = new GCons(	"scint_place_10",
 
 
 G10PVPlacement* scint_place_10 = nullptr;
-	scint_place_10 = new G10PVPlacement	( scint_rot10,
+	scint_place_10 = new G10PVPlacement	( scint_rot_10,
 									G10ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_10",
 									scint_logic_10,
@@ -396,7 +507,7 @@ G4Cons* scint_object_11 = new GCons(	"scint_place_11",
 
 
 G11PVPlacement* scint_place_11 = nullptr;
-	scint_place_11 = new G11PVPlacement	( scint_rot11,
+	scint_place_11 = new G11PVPlacement	( scint_rot_11,
 									G11ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_11",
 									scint_logic_11,
@@ -433,7 +544,7 @@ G4Cons* scint_object_12 = new GCons(	"scint_place_12",
 
 
 G12PVPlacement* scint_place_12 = nullptr;
-	scint_place_12 = new G12PVPlacement	( scint_rot12,
+	scint_place_12 = new G12PVPlacement	( scint_rot_12,
 									G12ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_12",
 									scint_logic_12,
@@ -470,7 +581,7 @@ G4Cons* scint_object_13 = new GCons(	"scint_place_13",
 
 
 G13PVPlacement* scint_place_13 = nullptr;
-	scint_place_13 = new G13PVPlacement	( scint_rot13,
+	scint_place_13 = new G13PVPlacement	( scint_rot_13,
 									G13ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_13",
 									scint_logic_13,
@@ -507,7 +618,7 @@ G4Cons* scint_object_14 = new GCons(	"scint_place_14",
 
 
 G14PVPlacement* scint_place_14 = nullptr;
-	scint_place_14 = new G14PVPlacement	( scint_rot14,
+	scint_place_14 = new G14PVPlacement	( scint_rot_14,
 									G14ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_14",
 									scint_logic_14,
@@ -544,7 +655,7 @@ G4Cons* scint_object_15 = new GCons(	"scint_place_15",
 
 
 G15PVPlacement* scint_place_15 = nullptr;
-	scint_place_15 = new G15PVPlacement	( scint_rot15,
+	scint_place_15 = new G15PVPlacement	( scint_rot_15,
 									G15ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_15",
 									scint_logic_15,
@@ -581,7 +692,7 @@ G4Cons* scint_object_16 = new GCons(	"scint_place_16",
 
 
 G16PVPlacement* scint_place_16 = nullptr;
-	scint_place_16 = new G16PVPlacement	( scint_rot16,
+	scint_place_16 = new G16PVPlacement	( scint_rot_16,
 									G16ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_16",
 									scint_logic_16,
@@ -618,7 +729,7 @@ G4Cons* scint_object_17 = new GCons(	"scint_place_17",
 
 
 G17PVPlacement* scint_place_17 = nullptr;
-	scint_place_17 = new G17PVPlacement	( scint_rot17,
+	scint_place_17 = new G17PVPlacement	( scint_rot_17,
 									G17ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_17",
 									scint_logic_17,
@@ -655,7 +766,7 @@ G4Cons* scint_object_18 = new GCons(	"scint_place_18",
 
 
 G18PVPlacement* scint_place_18 = nullptr;
-	scint_place_18 = new G18PVPlacement	( scint_rot18,
+	scint_place_18 = new G18PVPlacement	( scint_rot_18,
 									G18ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_18",
 									scint_logic_18,
@@ -692,7 +803,7 @@ G4Cons* scint_object_19 = new GCons(	"scint_place_19",
 
 
 G19PVPlacement* scint_place_19 = nullptr;
-	scint_place_19 = new G19PVPlacement	( scint_rot19,
+	scint_place_19 = new G19PVPlacement	( scint_rot_19,
 									G19ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_19",
 									scint_logic_19,
@@ -729,7 +840,7 @@ G4Cons* scint_object_20 = new GCons(	"scint_place_20",
 
 
 G20PVPlacement* scint_place_20 = nullptr;
-	scint_place_20 = new G20PVPlacement	( scint_rot20,
+	scint_place_20 = new G20PVPlacement	( scint_rot_20,
 									G20ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_20",
 									scint_logic_20,
@@ -766,7 +877,7 @@ G4Cons* scint_object_21 = new GCons(	"scint_place_21",
 
 
 G21PVPlacement* scint_place_21 = nullptr;
-	scint_place_21 = new G21PVPlacement	( scint_rot21,
+	scint_place_21 = new G21PVPlacement	( scint_rot_21,
 									G21ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_21",
 									scint_logic_21,
@@ -803,7 +914,7 @@ G4Cons* scint_object_22 = new GCons(	"scint_place_22",
 
 
 G22PVPlacement* scint_place_22 = nullptr;
-	scint_place_22 = new G22PVPlacement	( scint_rot22,
+	scint_place_22 = new G22PVPlacement	( scint_rot_22,
 									G22ThreeVector (-123*mm, 0, 0*mm),
 									"scint_place_22",
 									scint_logic_22,
