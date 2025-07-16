@@ -41,7 +41,7 @@ GLogicalVolume* scint_logic1 = nullptr;
 scint_logic1 = new G4LogicalVolume (scint_object1, scint_material, "scint_logical1");
 
 G4PVPlacement* scint_place1 = nullptr;
-scint_place1 = new G4PVPlacement ( (0, 0, 0),(0, 0, 103), scint_logic1, "scint_place1", ellips_logic);
+scint_place1 = new G4PVPlacement ( (0, 0, 0),(0, 0, 103*mm), scint_logic1, "scint_place1", ellips_logic);
 
 G4Cons* scint_obj2 = nullptr;
  scint_obj2 = new G4ECons	(
@@ -59,7 +59,7 @@ GLogicalVolume* scint_logic2 = nullptr;
 scint_logic2 = new G4LogicalVolume (scint_object2, scint_material, "scint_logical2");
 
 G4PVPlacement* scint_place2 = nullptr;
-scint_place2 = new G4PVPlacement ( (0, 0, -1),(0, 0, -103), scint_logic2, "scint_place2", ellips_logic);
+scint_place2 = new G4PVPlacement ( (0, 0, -1),(0, 0, -103*mm), scint_logic2, "scint_place2", ellips_logic);
 
 G4Cons* scint_obj3 = nullptr;
  scint_obj3 = new G4ECons	(
@@ -79,7 +79,7 @@ GLogicalVolume* scint_logic3 = nullptr;
 scint_logic3 = new G4LogicalVolume (scint_object3, scint_material, "scint_logical3");
 
 G4PVPlacement* scint_place3 = nullptr;
-scint_place3 = new G4PVPlacement ( (123, 0, 0),(1, 0, 0), scint_logic3, "scint_place3", ellips_logic);
+scint_place3 = new G4PVPlacement ( (123*mm, 0, 0),(1, 0, 0), scint_logic3, "scint_place3", ellips_logic);
 
 G4Cons* scint_obj4 = nullptr;
  scint_obj4 = new G4ECons	(
@@ -97,7 +97,7 @@ GLogicalVolume* scint_logic4 = nullptr;
 scint_logic4 = new G4LogicalVolume (scint_object4, scint_material, "scint_logical4");
 
 G4PVPlacement* scint_place4 = nullptr;
-scint_place4 = new G4PVPlacement ( (-123, 0, 0),(-1, 0, 0), scint_logic4, "scint_place4", ellips_logic);
+scint_place4 = new G4PVPlacement ( (-123*mm, 0, 0),(-1, 0, 0), scint_logic4, "scint_place4", ellips_logic);
 
 G4Cons* scint_obj5 = nullptr;
  scint_obj5 = new G4ECons	(
@@ -115,7 +115,7 @@ GLogicalVolume* scint_logic5 = nullptr;
 scint_logic5 = new G4LogicalVolume (scint_object5, scint_material, "scint_logical5");
 
 G4PVPlacement* scint_place5 = nullptr;
-scint_place5 = new G4PVPlacement ( (87, 87, 0),(1, 1, 0), scint_logic5, "scint_place5", ellips_logic);
+scint_place5 = new G4PVPlacement ( (87*mm, 87*mm, 0),(1, 1, 0), scint_logic5, "scint_place5", ellips_logic);
 
 G4Cons* scint_obj6 = nullptr;
  scint_obj6 = new G4ECons	(
@@ -133,7 +133,7 @@ GLogicalVolume* scint_logic6 = nullptr;
 scint_logic6 = new G4LogicalVolume (scint_object6, scint_material, "scint_logical6");
 
 G4PVPlacement* scint_place6 = nullptr;
-scint_place6 = new G4PVPlacement ( (-87, -87, 0),(-1, -1, 0), scint_logic6, "scint_place6", ellips_logic);
+scint_place6 = new G4PVPlacement ( (-87*mm, -87*mm, 0),(-1, -1, 0), scint_logic6, "scint_place6", ellips_logic);
 
 G4Cons* scint_obj7 = nullptr;
  scint_obj7 = new G4ECons	(
@@ -151,7 +151,7 @@ GLogicalVolume* scint_logic7 = nullptr;
 scint_logic7 = new G4LogicalVolume (scint_object7, scint_material, "scint_logical7");
 
 G4PVPlacement* scint_place7 = nullptr;
-scint_place7 = new G4PVPlacement ( (0, 123, 0),(0, 1, 0), scint_logic7, "scint_place7", ellips_logic);
+scint_place7 = new G4PVPlacement ( (0, 123*mm, 0),(0, 1, 0), scint_logic7, "scint_place7", ellips_logic);
 
 G4Cons* scint_obj8 = nullptr;
  scint_obj8 = new G4ECons	(
@@ -169,7 +169,7 @@ GLogicalVolume* scint_logic8 = nullptr;
 scint_logic8 = new G4LogicalVolume (scint_object8, scint_material, "scint_logical8");
 
 G4PVPlacement* scint_place8 = nullptr;
-scint_place8 = new G4PVPlacement ( (0, -123, 0),(0, -1, 0), scint_logic8, "scint_place8", ellips_logic);
+scint_place8 = new G4PVPlacement ( (0, -123*mm, 0),(0, -1, 0), scint_logic8, "scint_place8", ellips_logic);
 
 G4Cons* scint_obj9 = nullptr;
  scint_obj9 = new G4ECons	(
@@ -187,7 +187,7 @@ GLogicalVolume* scint_logic9 = nullptr;
 scint_logic9 = new G4LogicalVolume (scint_object9, scint_material, "scint_logical9");
 
 G4PVPlacement* scint_place9 = nullptr;
-scint_place9 = new G4PVPlacement ( (-87, 87, ),(-1, 1, 0), scint_logic9, "scint_place9", ellips_logic);
+scint_place9 = new G4PVPlacement ( (-87*mm, 87*mm, ),(-1, 1, 0), scint_logic9, "scint_place9", ellips_logic);
 
 G4Cons* scint_obj10 = nullptr;
  scint_obj10 = new G4ECons	(
@@ -205,7 +205,7 @@ GLogicalVolume* scint_logic10 = nullptr;
 scint_logic10 = new G4LogicalVolume (scint_object10, scint_material, "scint_logical10");
 
 G4PVPlacement* scint_place10 = nullptr;
-scint_place10 = new G4PVPlacement ( (87, -87, 0),(1, -1, 0), scint_logic10, "scint_place10", ellips_logic);
+scint_place10 = new G4PVPlacement ( (87*mm, -87*mm, 0),(1, -1, 0), scint_logic10, "scint_place10", ellips_logic);
 
 G4Cons* scint_obj11 = nullptr;
  scint_obj11 = new G4ECons	(
@@ -225,7 +225,7 @@ GLogicalVolume* scint_logic11 = nullptr;
 scint_logic11 = new G4LogicalVolume (scint_object11, scint_material, "scint_logical11");
 
 G4PVPlacement* scint_place11 = nullptr;
-scint_place11 = new G4PVPlacement ( (0, -101.8, 90),(0, -91.5, 103.5), scint_logic11, "scint_place11", ellips_logic);
+scint_place11 = new G4PVPlacement ( (0, -101.8, 90),(0, -91.5*mm, 103.5*mm), scint_logic11, "scint_place11", ellips_logic);
 
 G4Cons* scint_obj12 = nullptr;
  scint_obj12 = new G4ECons	(
@@ -243,7 +243,7 @@ GLogicalVolume* scint_logic12 = nullptr;
 scint_logic12 = new G4LogicalVolume (scint_object12, scint_material, "scint_logical12");
 
 G4PVPlacement* scint_place12 = nullptr;
-scint_place12 = new G4PVPlacement ( (0, 101.8, -90),(0, 91.5, -103.5), scint_logic12, "scint_place12", ellips_logic);
+scint_place12 = new G4PVPlacement ( (0, 101.8, -90),(0, 91.5*mm, -103.5*mm), scint_logic12, "scint_place12", ellips_logic);
 
 G4Cons* scint_obj13 = nullptr;
  scint_obj13 = new G4ECons	(
@@ -261,7 +261,7 @@ GLogicalVolume* scint_logic13 = nullptr;
 scint_logic13 = new G4LogicalVolume (scint_object13, scint_material, "scint_logical13");
 
 G4PVPlacement* scint_place13 = nullptr;
-scint_place13 = new G4PVPlacement ( (,(0, 101.8, 90),(0, 91.5, 103.5), scint_logic13, "scint_place13", ellips_logic);
+scint_place13 = new G4PVPlacement ( (,(0, 101.8, 90),(0, 91.5*mm, 103.5*mm), scint_logic13, "scint_place13", ellips_logic);
 
 G4Cons* scint_obj14 = nullptr;
  scint_obj14 = new G4ECons	(
@@ -279,7 +279,7 @@ GLogicalVolume* scint_logic14 = nullptr;
 scint_logic14 = new G4LogicalVolume (scint_object14, scint_material, "scint_logical14");
 
 G4PVPlacement* scint_place14 = nullptr;
-scint_place14 = new G4PVPlacement ( (0, 101.8, -90),(0, 91.5, -103.5), scint_logic14, "scint_place14", ellips_logic);
+scint_place14 = new G4PVPlacement ( (0, 101.8, -90),(0, 91.5*mm, -103.5*mm), scint_logic14, "scint_place14", ellips_logic);
 
 G4Cons* scint_obj15 = nullptr;
  scint_obj15 = new G4ECons	(
@@ -297,7 +297,7 @@ GLogicalVolume* scint_logic15 = nullptr;
 scint_logic15 = new G4LogicalVolume (scint_object15, scint_material, "scint_logical15");
 
 G4PVPlacement* scint_place15 = nullptr;
-scint_place15 = new G4PVPlacement ( (-66.9, -68.2, 38.6),(-89.7, -97.5, 51.8), scint_logic15, "scint_place15", ellips_logic);
+scint_place15 = new G4PVPlacement ( (-66.9*mm, -68.2*mm, 38.6*mm),(-89.7, -97.5, 51.8), scint_logic15, "scint_place15", ellips_logic);
 
 G4Cons* scint_obj16 = nullptr;
  scint_obj16 = new G4ECons	(
@@ -315,7 +315,7 @@ GLogicalVolume* scint_logic16 = nullptr;
 scint_logic16 = new G4LogicalVolume (scint_object16, scint_material, "scint_logical16");
 
 G4PVPlacement* scint_place16 = nullptr;
-scint_place16 = new G4PVPlacement ( (66.9, 68.2, -38.6),(89.7, 97.5, -51.8), scint_logic16, "scint_place16", ellips_logic);
+scint_place16 = new G4PVPlacement ( (66.9*mm, 68.2*mm, -38.6*mm),(89.7, 97.5, -51.8), scint_logic16, "scint_place16", ellips_logic);
 
 G4Cons* scint_obj17 = nullptr;
  scint_obj17 = new G4ECons	(
@@ -333,7 +333,7 @@ GLogicalVolume* scint_logic17 = nullptr;
 scint_logic17 = new G4LogicalVolume (scint_object17, scint_material, "scint_logical17");
 
 G4PVPlacement* scint_place17 = nullptr;
-scint_place17 = new G4PVPlacement ( (66.9, -68.2, 38.6),(89.7, -97.5, 51.8), scint_logic17, "scint_place17", ellips_logic);
+scint_place17 = new G4PVPlacement ( (66.9*mm, -68.2*mm, 38.6*mm),(89.7, -97.5, 51.8), scint_logic17, "scint_place17", ellips_logic);
 
 G4Cons* scint_obj18 = nullptr;
  scint_obj18 = new G4ECons	(
@@ -351,7 +351,7 @@ GLogicalVolume* scint_logic18 = nullptr;
 scint_logic18 = new G4LogicalVolume (scint_object18, scint_material, "scint_logical18");
 
 G4PVPlacement* scint_place18 = nullptr;
-scint_place18 = new G4PVPlacement ( (-66.9, 68.2, -38.6),(-89.7, 97.5, -51.8), scint_logic18, "scint_place18", ellips_logic);
+scint_place18 = new G4PVPlacement ( (-66.9*mm, 68.2*mm, -38.6*mm),(-89.7, 97.5, -51.8), scint_logic18, "scint_place18", ellips_logic);
 
 G4Cons* scint_obj19 = nullptr;
  scint_obj19 = new G4ECons	(
@@ -369,7 +369,7 @@ GLogicalVolume* scint_logic19 = nullptr;
 scint_logic19 = new G4LogicalVolume (scint_object19, scint_material, "scint_logical19");
 
 G4PVPlacement* scint_place19 = nullptr;
-scint_place19 = new G4PVPlacement ( (-66.9, 68.2, 38.6),(-89.7, 97.5, 51.8), scint_logic19, "scint_place19", ellips_logic);
+scint_place19 = new G4PVPlacement ( (-66.9*mm, 68.2*mm, 38.6*mm),(-89.7, 97.5, 51.8), scint_logic19, "scint_place19", ellips_logic);
 
 G4Cons* scint_obj20 = nullptr;
  scint_obj20 = new G4ECons	(
@@ -387,7 +387,7 @@ GLogicalVolume* scint_logic20 = nullptr;
 scint_logic20 = new G4LogicalVolume (scint_object20, scint_material, "scint_logical20");
 
 G4PVPlacement* scint_place20 = nullptr;
-scint_place20 = new G4PVPlacement ( (66.9, -68.2, -38.6),(89.7, -97.5, -51.8), scint_logic20, "scint_place20", ellips_logic);
+scint_place20 = new G4PVPlacement ( (66.9*mm, -68.2*mm, -38.6*mm),(89.7, -97.5, -51.8), scint_logic20, "scint_place20", ellips_logic);
 
 G4Cons* scint_obj21 = nullptr;
  scint_obj21 = new G4ECons	(
@@ -405,7 +405,7 @@ GLogicalVolume* scint_logic21 = nullptr;
 scint_logic21 = new G4LogicalVolume (scint_object21, scint_material, "scint_logical21");
 
 G4PVPlacement* scint_place21 = nullptr;
-scint_place21 = new G4PVPlacement ( (66.9, 68.2, 38.6),(89.7, 97.5, 51.8), scint_logic21, "scint_place21", ellips_logic);
+scint_place21 = new G4PVPlacement ( (66.9*mm, 68.2*mm, 38.6*mm),(89.7, 97.5, 51.8), scint_logic21, "scint_place21", ellips_logic);
 
 G4Cons* scint_obj22 = nullptr;
  scint_obj22 = new G4ECons	(
@@ -423,7 +423,7 @@ GLogicalVolume* scint_logic22 = nullptr;
 scint_logic22 = new G4LogicalVolume (scint_object22, scint_material, "scint_logical22");
 
 G4PVPlacement* scint_place22 = nullptr;
-scint_place22 = new G4PVPlacement ( (-66.9, -68.2, -38.6),(-89.7, -97.5, -51.8), scint_logic22, "scint_place22", ellips_logic);
+scint_place22 = new G4PVPlacement ( (-66.9*mm, -68.2*mm, -38.6*mm),(-89.7, -97.5, -51.8), scint_logic22, "scint_place22", ellips_logic);
 
 
 // nullptr
