@@ -160,7 +160,7 @@ G4Cons* scint_obj1 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -178,7 +178,7 @@ G4Cons* scint_obj2 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -198,7 +198,7 @@ G4Cons* scint_obj3 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -218,7 +218,7 @@ G4Cons* scint_obj4 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -236,7 +236,7 @@ G4Cons* scint_obj5 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -254,7 +254,7 @@ G4Cons* scint_obj6 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -272,7 +272,7 @@ G4Cons* scint_obj7 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -290,7 +290,7 @@ G4Cons* scint_obj8 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -308,7 +308,7 @@ G4Cons* scint_obj9 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -326,7 +326,7 @@ G4Cons* scint_obj10 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -348,7 +348,7 @@ G4Cons* scint_obj11 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -366,7 +366,7 @@ G4Cons* scint_obj12 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -384,7 +384,7 @@ G4Cons* scint_obj13 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -402,7 +402,7 @@ G4Cons* scint_obj14 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -420,7 +420,7 @@ G4Cons* scint_obj15 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -438,7 +438,7 @@ G4Cons* scint_obj16 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -456,7 +456,7 @@ G4Cons* scint_obj17 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -474,7 +474,7 @@ G4Cons* scint_obj18 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -492,7 +492,7 @@ G4Cons* scint_obj19 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -510,7 +510,7 @@ G4Cons* scint_obj20 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -528,7 +528,7 @@ G4Cons* scint_obj21 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -546,7 +546,7 @@ G4Cons* scint_obj22 = nullptr;
 	40*mm,
 	0,
 	30*mm,
-	251*mm,
+	25*mm,
 	0,
 	360*deg
 );
@@ -712,5 +712,4 @@ air->AddMaterial (oxy, 21*perCent);
 air->AddMaterial (az, 78*perCent);
 air->AddMaterial (ar, 0.9*perCent);
 air->AddMaterial (ugl, 0.1*perCent);
-
 
