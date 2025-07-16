@@ -85,33 +85,33 @@ scint_rot_10->rotateY(-90.*deg);
 scint_rot_10->rotateZ(135.*deg);
 
 G4RotationMatrix* scint_rot_11 = new G4RotationMatrix();
-scint_rot_11->rotateX(0.*deg);
-scint_rot_11->rotateY(0.*deg);
+scint_rot_11->rotateX(-41.5*deg);
+scint_rot_11->rotateY(-90.*deg);
 scint_rot_11->rotateZ(0.*deg);
 
 G4RotationMatrix* scint_rot_12 = new G4RotationMatrix();
-scint_rot_12->rotateX(0.*deg);
-scint_rot_12->rotateY(0.*deg);
+scint_rot_12->rotateX(41.5*deg);
+scint_rot_12->rotateY(90.*deg);
 scint_rot_12->rotateZ(0.*deg);
 
 G4RotationMatrix* scint_rot_13 = new G4RotationMatrix();
-scint_rot_13->rotateX(0.*deg);
-scint_rot_13->rotateY(0.*deg);
+scint_rot_13->rotateX(-41.5*deg);
+scint_rot_13->rotateY(90.*deg);
 scint_rot_13->rotateZ(0.*deg);
 
 G4RotationMatrix* scint_rot_14 = new G4RotationMatrix();
-scint_rot_14->rotateX(0.*deg);
-scint_rot_14->rotateY(0.*deg);
+scint_rot_14->rotateX(41.5*deg);
+scint_rot_14->rotateY(-90.*deg);
 scint_rot_14->rotateZ(0.*deg);
 
 G4RotationMatrix* scint_rot_15 = new G4RotationMatrix();
-scint_rot_15->rotateX(0.*deg);
-scint_rot_15->rotateY(0.*deg);
+scint_rot_15->rotateX(43.3*deg);
+scint_rot_15->rotateY(-60.*deg);
 scint_rot_15->rotateZ(0.*deg);
 
 G4RotationMatrix* scint_rot_16 = new G4RotationMatrix();
-scint_rot_16->rotateX(0.*deg);
-scint_rot_16->rotateY(0.*deg);
+scint_rot_16->rotateX(-43.3*deg);
+scint_rot_16->rotateY(120.*deg);
 scint_rot_16->rotateZ(0.*deg);
 
 G4RotationMatrix* scint_rot_17 = new G4RotationMatrix();
@@ -337,6 +337,10 @@ scint_logic10 = new G4LogicalVolume (scint_object10, scint_material, "scint_logi
 G4PVPlacement* scint_place10 = nullptr;
 scint_place10 = new G4PVPlacement ( (87*mm, -87*mm, 0),(1, -1, 0), scint_logic10, "scint_place10", ellips_logic);
 
+
+// cherepashka
+
+
 G4Cons* scint_obj11 = nullptr;
  scint_obj11 = new G4ECons	(
 	"scint_physical11",
@@ -348,8 +352,6 @@ G4Cons* scint_obj11 = nullptr;
 	0,
 	360*deg
 );
-
-// cherepashka
 
 GLogicalVolume* scint_logic11 = nullptr;
 scint_logic11 = new G4LogicalVolume (scint_object11, scint_material, "scint_logical11");
@@ -409,7 +411,7 @@ GLogicalVolume* scint_logic14 = nullptr;
 scint_logic14 = new G4LogicalVolume (scint_object14, scint_material, "scint_logical14");
 
 G4PVPlacement* scint_place14 = nullptr;
-scint_place14 = new G4PVPlacement ( (0, 101.8, -90),(0, 91.5*mm, -103.5*mm), scint_logic14, "scint_place14", ellips_logic);
+scint_place14 = new G4PVPlacement ( (0, 101.8, -90),(0, 91.5*mm	, -103.5*mm), scint_logic14, "scint_place14", ellips_logic);
 
 G4Cons* scint_obj15 = nullptr;
  scint_obj15 = new G4ECons	(
