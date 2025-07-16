@@ -13,12 +13,28 @@ ellips_obj = new G4Ellipsoid (
 );
 
 GLogicalVolume* ellips_logic = nullptr;
-ellips_logic = new G4LogicalVolume (sellips_object, pla, "ellips_logical");
+ellips_logic = new G4LogicalVolume (ellips_object, pla, "ellips_logical");
 
 G4PVPlacement* ellips_place = nullptr;
 ellips_place = new G4PVPlacement ( (0, 0, 0),(0, 0, 0), ellips_logic, "ellips_place", world_logical);
 
 
+
+G4Ellipsoid* ellipsdirka_obj = nullptr;
+ellipsdirka_obj = new G4Ellipsoid (
+	"ellipsoid_dirka",
+	78*mm,
+	78*mm,
+	56*mm,
+	0.,
+	0.
+);
+
+GLogicalVolume* ellipsdirka_logic = nullptr;
+ellipsdirka_logic = new G4LogicalVolume (ellipsdirka_object, air, "ellipsdirka_logical");
+
+G4PVPlacement* ellipsdirka_place = nullptr;
+ellipsdirka_place = new G4PVPlacement ( (0, 0, 0),(0, 0, 0), ellipsdirka_logic, "ellipsdirka_place", ellips_logical);
 
 
 // scints
