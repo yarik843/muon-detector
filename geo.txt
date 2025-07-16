@@ -115,33 +115,33 @@ scint_rot_16->rotateY(120.*deg);
 scint_rot_16->rotateZ(0.*deg);
 
 G4RotationMatrix* scint_rot_17 = new G4RotationMatrix();
-scint_rot_17->rotateX(0.*deg);
-scint_rot_17->rotateY(0.*deg);
+scint_rot_17->rotateX(43.3*deg);
+scint_rot_17->rotateY(60.*deg);
 scint_rot_17->rotateZ(0.*deg);
 
 G4RotationMatrix* scint_rot_18 = new G4RotationMatrix();
-scint_rot_18->rotateX(0.*deg);
-scint_rot_18->rotateY(0.*deg);
+scint_rot_18->rotateX(-43.3*deg);
+scint_rot_18->rotateY(-120.*deg);
 scint_rot_18->rotateZ(0.*deg);
 
 G4RotationMatrix* scint_rot_19 = new G4RotationMatrix();
-scint_rot_19->rotateX(0.*deg);
-scint_rot_19->rotateY(0.*deg);
+scint_rot_19->rotateX(-43.3*deg);
+scint_rot_19->rotateY(-60.*deg);
 scint_rot_19->rotateZ(0.*deg);
 
 G4RotationMatrix* scint_rot_20 = new G4RotationMatrix();
-scint_rot_20->rotateX(0.*deg);
-scint_rot_20->rotateY(0.*deg);
+scint_rot_20->rotateX(43.3*deg);
+scint_rot_20->rotateY(120.*deg);
 scint_rot_20->rotateZ(0.*deg);
 
 G4RotationMatrix* scint_rot_21 = new G4RotationMatrix();
-scint_rot_21->rotateX(0.*deg);
-scint_rot_21->rotateY(0.*deg);
+scint_rot_21->rotateX(-43.3*deg);
+scint_rot_21->rotateY(60.*deg);
 scint_rot_21->rotateZ(0.*deg);
 
 G4RotationMatrix* scint_rot_22 = new G4RotationMatrix();
-scint_rot_22->rotateX(0.*deg);
-scint_rot_22->rotateY(0.*deg);
+scint_rot_22->rotateX(43.3*deg);
+scint_rot_22->rotateY(-120.*deg);
 scint_rot_22->rotateZ(0.*deg);
 
 
