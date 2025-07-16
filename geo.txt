@@ -1,5 +1,5 @@
 
-// objects
+// ellips
 
 
 G4Ellipsoid* ellips_obj = nullptr;
@@ -12,47 +12,13 @@ ellips_obj = new G4Ellipsoid (
 	0.
 );
 
-G4Cons* scint_obj = nullptr;
-scint_obj = new G4ECons	(
-	"scint_physical",
-	0,
-	40*mm,
-	0,
-	30*mm,
-	251*mm,
-	0,
-	360*deg	 
-);		
-
-GLogicalVolume* scint_logic = nullptr;
-scint_logic = new G4LogicalVolume (scint_object, scint_material, "scint_logical");
-
 GLogicalVolume* ellips_logic = nullptr;
 ellips_logic = new G4LogicalVolume (sellips_object, pla, "ellips_logical");
-
-G4PVPlacement* scint_place = nullptr;
-scint_place = new G4PVPlacement ( (0, 0, 0),(0, 0, 103), scint_logic, "scint_place", ellips_logic);
 
 G4PVPlacement* ellips_place = nullptr;
 ellips_place = new G4PVPlacement ( (0, 0, 0),(0, 0, 0), ellips_logic, "ellips_place", world_logical);
 
-//elements
 
-
-G4Element* C = nullptr;
-C = new G4Element ("C_element", "C", 6., 12.);
-
-G4Element* H = nullptr;
-H = new G4Element ("H_element", "H", 1., 1.);
-
-G4Element* N = nullptr;
-N = new G4Element ("N_element", "N", 7., 14.);
-
-G4Element* O = nullptr;
-O = new G4Element ("O_element", "O", 8., 16.);
-
-G4Element* Ar = nullptr;
-Ar = new G4Element ("Ar_element", "Ar", 81., 40.);
 
 
 // scints
@@ -459,7 +425,97 @@ scint_logic22 = new G4LogicalVolume (scint_object22, scint_material, "scint_logi
 G4PVPlacement* scint_place22 = nullptr;
 scint_place22 = new G4PVPlacement ( (-66.9, -68.2, -38.6),(-89.7, -97.5, -51.8), scint_logic22, "scint_place22", ellips_logic);
 
-	
+
+// nullptr
+
+
+G4Cons* scint_obj1 = nullptr;
+GLogicalVolume* scint_logic1 = nullptr;
+G4PVPlacement* scint_place1 = nullptr
+G4Cons* scint_obj2 = nullptr;
+GLogicalVolume* scint_logic2 = nullptr;
+G4PVPlacement* scint_place2 = nullptr
+G4Cons* scint_obj3 = nullptr;
+GLogicalVolume* scint_logic3 = nullptr;
+G4PVPlacement* scint_place3 = nullptr
+G4Cons* scint_obj4 = nullptr;
+GLogicalVolume* scint_logic4 = nullptr;
+G4PVPlacement* scint_place4 = nullptr
+G4Cons* scint_obj5 = nullptr;
+GLogicalVolume* scint_logic5 = nullptr;
+G4PVPlacement* scint_place5 = nullptr
+G4Cons* scint_obj6 = nullptr;
+GLogicalVolume* scint_logic6 = nullptr;
+G4PVPlacement* scint_place6 = nullptr
+G4Cons* scint_obj7 = nullptr;
+GLogicalVolume* scint_logic7 = nullptr;
+G4PVPlacement* scint_place7 = nullptr
+G4Cons* scint_obj8 = nullptr;
+GLogicalVolume* scint_logic8 = nullptr;
+G4PVPlacement* scint_place8 = nullptr
+G4Cons* scint_obj9 = nullptr;
+GLogicalVolume* scint_logic9 = nullptr;
+G4PVPlacement* scint_place9 = nullptr
+G4Cons* scint_obj10 = nullptr;
+GLogicalVolume* scint_logic10 = nullptr;
+G4PVPlacement* scint_place10 = nullptr
+G4Cons* scint_obj11 = nullptr;
+GLogicalVolume* scint_logic11 = nullptr;
+G4PVPlacement* scint_place11 = nullptr
+G4Cons* scint_obj12 = nullptr;
+GLogicalVolume* scint_logic12 = nullptr;
+G4PVPlacement* scint_place12 = nullptr
+G4Cons* scint_obj13 = nullptr;
+GLogicalVolume* scint_logic13 = nullptr;
+G4PVPlacement* scint_place13 = nullptr
+G4Cons* scint_obj14 = nullptr;
+GLogicalVolume* scint_logic14 = nullptr;
+G4PVPlacement* scint_place14 = nullptr
+G4Cons* scint_obj15 = nullptr;
+GLogicalVolume* scint_logic15 = nullptr;
+G4PVPlacement* scint_place15 = nullptr
+G4Cons* scint_obj16 = nullptr;
+GLogicalVolume* scint_logic16 = nullptr;
+G4PVPlacement* scint_place16 = nullptr
+G4Cons* scint_obj17 = nullptr;
+GLogicalVolume* scint_logic17 = nullptr;
+G4PVPlacement* scint_place17 = nullptr
+G4Cons* scint_obj18 = nullptr;
+GLogicalVolume* scint_logic18 = nullptr;
+G4PVPlacement* scint_place18 = nullptr
+G4Cons* scint_obj19 = nullptr;
+GLogicalVolume* scint_logic19 = nullptr;
+G4PVPlacement* scint_place19 = nullptr
+G4Cons* scint_obj20 = nullptr;
+GLogicalVolume* scint_logic20 = nullptr;
+G4PVPlacement* scint_place20 = nullptr
+G4Cons* scint_obj21 = nullptr;
+GLogicalVolume* scint_logic21 = nullptr;
+G4PVPlacement* scint_place21 = nullptr
+G4Cons* scint_obj22 = nullptr;
+GLogicalVolume* scint_logic22 = nullptr;
+G4PVPlacement* scint_place22 = nullptr
+
+
+
+//elements
+
+
+G4Element* C = nullptr;
+C = new G4Element ("C_element", "C", 6., 12.);
+
+G4Element* H = nullptr;
+H = new G4Element ("H_element", "H", 1., 1.);
+
+G4Element* N = nullptr;
+N = new G4Element ("N_element", "N", 7., 14.);
+
+G4Element* O = nullptr;
+O = new G4Element ("O_element", "O", 8., 16.);
+
+G4Element* Ar = nullptr;
+Ar = new G4Element ("Ar_element", "Ar", 81., 40.);
+
 	
 // materials 
 	
