@@ -138,7 +138,7 @@ G4Cons* scint_object_1 = new GCons(	"scint_place_1",
 
 G1PVPlacement* scint_place_1 = nullptr;
 	scint_place_1 = new G1PVPlacement	( scint_rot_1,
-									G1ThreeVector (-123*mm, 0, 0*mm),
+									G1ThreeVector (0, 0, 103*mm),
 									"scint_place_1",
 									scint_logic_1,
 									fExperimentalHall_phys,
@@ -175,7 +175,7 @@ G4Cons* scint_object_2 = new GCons(	"scint_place_2",
 
 G2PVPlacement* scint_place_2 = nullptr;
 	scint_place_2 = new G2PVPlacement	( scint_rot_2,
-									G2ThreeVector (-123*mm, 0, 0*mm),
+									G2ThreeVector (0, 0, -103*mm),
 									"scint_place_2",
 									scint_logic_2,
 									fExperimentalHall_phys,
@@ -212,7 +212,7 @@ G4Cons* scint_object_3 = new GCons(	"scint_place_3",
 
 G3PVPlacement* scint_place_3 = nullptr;
 	scint_place_3 = new G3PVPlacement	( scint_rot_3,
-									G3ThreeVector (-123*mm, 0, 0*mm),
+									G3ThreeVector (123*mm, 0, 0),
 									"scint_place_3",
 									scint_logic_3,
 									fExperimentalHall_phys,
@@ -286,7 +286,7 @@ G4Cons* scint_object_5 = new GCons(	"scint_place_5",
 
 G5PVPlacement* scint_place_5 = nullptr;
 	scint_place_5 = new G5PVPlacement	( scint_rot_5,
-									G5ThreeVector (-123*mm, 0, 0*mm),
+									G5ThreeVector (87*mm, 87*mm, 0),
 									"scint_place_5",
 									scint_logic_5,
 									fExperimentalHall_phys,
@@ -323,7 +323,7 @@ G4Cons* scint_object_6 = new GCons(	"scint_place_6",
 
 G6PVPlacement* scint_place_6 = nullptr;
 	scint_place_6 = new G6PVPlacement	( scint_rot_6,
-									G6ThreeVector (-123*mm, 0, 0*mm),
+									G6ThreeVector (-87*mm, -87*mm, 0),
 									"scint_place_6",
 									scint_logic_6,
 									fExperimentalHall_phys,
@@ -360,7 +360,7 @@ G4Cons* scint_object_7 = new GCons(	"scint_place_7",
 
 G7PVPlacement* scint_place_7 = nullptr;
 	scint_place_7 = new G7PVPlacement	( scint_rot_7,
-									G7ThreeVector (-123*mm, 0, 0*mm),
+									G7ThreeVector (0, 123*mm, 0),
 									"scint_place_7",
 									scint_logic_7,
 									fExperimentalHall_phys,
@@ -397,7 +397,7 @@ G4Cons* scint_object_8 = new GCons(	"scint_place_8",
 
 G8PVPlacement* scint_place_8 = nullptr;
 	scint_place_8 = new G8PVPlacement	( scint_rot_8,
-									G8ThreeVector (-123*mm, 0, 0*mm),
+									G8ThreeVector (0, -123*mm, 0),
 									"scint_place_8",
 									scint_logic_8,
 									fExperimentalHall_phys,
@@ -434,7 +434,7 @@ G4Cons* scint_object_9 = new GCons(	"scint_place_9",
 
 G9PVPlacement* scint_place_9 = nullptr;
 	scint_place_9 = new G9PVPlacement	( scint_rot_9,
-									G9ThreeVector (-123*mm, 0, 0*mm),
+									G9ThreeVector (-87*mm, 87*mm, 0),
 									"scint_place_9",
 									scint_logic_9,
 									fExperimentalHall_phys,
@@ -471,7 +471,7 @@ G4Cons* scint_object_10 = new GCons(	"scint_place_10",
 
 G10PVPlacement* scint_place_10 = nullptr;
 	scint_place_10 = new G10PVPlacement	( scint_rot_10,
-									G10ThreeVector (-123*mm, 0, 0*mm),
+									G10ThreeVector (87*mm, -87*mm, 0),
 									"scint_place_10",
 									scint_logic_10,
 									fExperimentalHall_phys,
@@ -508,7 +508,7 @@ G4Cons* scint_object_11 = new GCons(	"scint_place_11",
 
 G11PVPlacement* scint_place_11 = nullptr;
 	scint_place_11 = new G11PVPlacement	( scint_rot_11,
-									G11ThreeVector (-123*mm, 0, 0*mm),
+									G11ThreeVector (0, -91.5*mm, 103.5*mm),
 									"scint_place_11",
 									scint_logic_11,
 									fExperimentalHall_phys,
@@ -545,7 +545,7 @@ G4Cons* scint_object_12 = new GCons(	"scint_place_12",
 
 G12PVPlacement* scint_place_12 = nullptr;
 	scint_place_12 = new G12PVPlacement	( scint_rot_12,
-									G12ThreeVector (-123*mm, 0, 0*mm),
+									G12ThreeVector (0, 91.5*mm, -103.5*mm),
 									"scint_place_12",
 									scint_logic_12,
 									fExperimentalHall_phys,
@@ -582,7 +582,7 @@ G4Cons* scint_object_13 = new GCons(	"scint_place_13",
 
 G13PVPlacement* scint_place_13 = nullptr;
 	scint_place_13 = new G13PVPlacement	( scint_rot_13,
-									G13ThreeVector (-123*mm, 0, 0*mm),
+									G13ThreeVector (0, 91.5*mm, 103.5*mm),
 									"scint_place_13",
 									scint_logic_13,
 									fExperimentalHall_phys,
@@ -619,7 +619,7 @@ G4Cons* scint_object_14 = new GCons(	"scint_place_14",
 
 G14PVPlacement* scint_place_14 = nullptr;
 	scint_place_14 = new G14PVPlacement	( scint_rot_14,
-									G14ThreeVector (-123*mm, 0, 0*mm),
+									G14ThreeVector (0, -91.5*mm, -103.5*mm),
 									"scint_place_14",
 									scint_logic_14,
 									fExperimentalHall_phys,
@@ -656,7 +656,7 @@ G4Cons* scint_object_15 = new GCons(	"scint_place_15",
 
 G15PVPlacement* scint_place_15 = nullptr;
 	scint_place_15 = new G15PVPlacement	( scint_rot_15,
-									G15ThreeVector (-123*mm, 0, 0*mm),
+									G15ThreeVector (-66.9*mm, -68.2*mm, 38.6*mm),
 									"scint_place_15",
 									scint_logic_15,
 									fExperimentalHall_phys,
@@ -693,7 +693,7 @@ G4Cons* scint_object_16 = new GCons(	"scint_place_16",
 
 G16PVPlacement* scint_place_16 = nullptr;
 	scint_place_16 = new G16PVPlacement	( scint_rot_16,
-									G16ThreeVector (-123*mm, 0, 0*mm),
+									G16ThreeVector (66.9*mm, 68.2*mm, -38.6*mm),
 									"scint_place_16",
 									scint_logic_16,
 									fExperimentalHall_phys,
@@ -730,7 +730,7 @@ G4Cons* scint_object_17 = new GCons(	"scint_place_17",
 
 G17PVPlacement* scint_place_17 = nullptr;
 	scint_place_17 = new G17PVPlacement	( scint_rot_17,
-									G17ThreeVector (-123*mm, 0, 0*mm),
+									G17ThreeVector (66.9*mm, -68.2*mm, 38.6*mm),
 									"scint_place_17",
 									scint_logic_17,
 									fExperimentalHall_phys,
@@ -767,7 +767,7 @@ G4Cons* scint_object_18 = new GCons(	"scint_place_18",
 
 G18PVPlacement* scint_place_18 = nullptr;
 	scint_place_18 = new G18PVPlacement	( scint_rot_18,
-									G18ThreeVector (-123*mm, 0, 0*mm),
+									G18ThreeVector (-66.9*mm, 68.2*mm, -38.6*mm),
 									"scint_place_18",
 									scint_logic_18,
 									fExperimentalHall_phys,
@@ -804,7 +804,7 @@ G4Cons* scint_object_19 = new GCons(	"scint_place_19",
 
 G19PVPlacement* scint_place_19 = nullptr;
 	scint_place_19 = new G19PVPlacement	( scint_rot_19,
-									G19ThreeVector (-123*mm, 0, 0*mm),
+									G19ThreeVector (-66.9*mm, 68.2*mm, 38.6*mm),
 									"scint_place_19",
 									scint_logic_19,
 									fExperimentalHall_phys,
@@ -841,7 +841,7 @@ G4Cons* scint_object_20 = new GCons(	"scint_place_20",
 
 G20PVPlacement* scint_place_20 = nullptr;
 	scint_place_20 = new G20PVPlacement	( scint_rot_20,
-									G20ThreeVector (-123*mm, 0, 0*mm),
+									G20ThreeVector (66.9*mm, -68.2*mm, -38.6*mm),
 									"scint_place_20",
 									scint_logic_20,
 									fExperimentalHall_phys,
@@ -878,7 +878,7 @@ G4Cons* scint_object_21 = new GCons(	"scint_place_21",
 
 G21PVPlacement* scint_place_21 = nullptr;
 	scint_place_21 = new G21PVPlacement	( scint_rot_21,
-									G21ThreeVector (-123*mm, 0, 0*mm),
+									G21ThreeVector (66.9*mm, 68.2*mm, 38.6*mm),
 									"scint_place_21",
 									scint_logic_21,
 									fExperimentalHall_phys,
@@ -915,7 +915,7 @@ G4Cons* scint_object_22 = new GCons(	"scint_place_22",
 
 G22PVPlacement* scint_place_22 = nullptr;
 	scint_place_22 = new G22PVPlacement	( scint_rot_22,
-									G22ThreeVector (-123*mm, 0, 0*mm),
+									G22ThreeVector (-66.9*mm, -68.2*mm, -38.6*mm),
 									"scint_place_22",
 									scint_logic_22,
 									fExperimentalHall_phys,
