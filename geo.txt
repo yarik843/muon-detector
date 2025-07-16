@@ -713,3 +713,49 @@ air->AddMaterial (az, 78*perCent);
 air->AddMaterial (ar, 0.9*perCent);
 air->AddMaterial (ugl, 0.1*perCent);
 
+
+
+//scint 4
+
+G4Cons* scint_object_4 = new G4Cons(	"scint_place_4",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg	 
+	);
+
+
+ G4LogicalVolume* scint_logic_4 = nullptr;
+	scint_logic_4 = new G4LogicalVolume (	scint_object_4,
+										fPstyrene,
+										"scint_logical_4"
+									
+										);
+									
+
+
+G4RotationMatrix* scint_rot_4 = new G4RotationMatrix();
+scint_rot_4->rotateX(0.*deg);
+scint_rot_4->rotateY(-90.*deg);
+scint_rot_4->rotateZ(0.*deg);
+
+
+
+
+G4PVPlacement* scint_place_4 = nullptr;
+	scint_place_4 = new G4PVPlacement	( scint_rot_4,
+									G4ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_4",
+									scint_logic_4,
+									fExperimentalHall_phys,
+									false,
+									0 
+	);
+	
+    G4VisAttributes* scint_vis_4= new G4VisAttributes(green);
+    scint_vis_4->SetVisibility(true);
+    scint_logic_4->SetVisAttributes(scint_vis_4);
+
