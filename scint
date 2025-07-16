@@ -1,0 +1,817 @@
+// rotations
+
+
+
+//scint 1
+
+G4Cons* scint_object_1 = new GCons(	"scint_place_1",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_1 = nullptr;
+	scint_logic_1 = new G4LogicalVolume (	scint_object_1,
+										fPstyrene,
+										"scint_logical_1"
+
+										);
+
+
+
+
+G1PVPlacement* scint_place_1 = nullptr;
+	scint_place_1 = new G1PVPlacement	( scint_rot1,
+									G1ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_1",
+									scint_logic_1,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G1VisAttributes* scint_vis_1= new G1VisAttributes(green);
+    scint_vis_1->SetVisibility(true);
+    scint_logic_1->SetVisAttributes(scint_vis_1);
+
+//scint 2
+
+G4Cons* scint_object_2 = new GCons(	"scint_place_2",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_2 = nullptr;
+	scint_logic_2 = new G4LogicalVolume (	scint_object_2,
+										fPstyrene,
+										"scint_logical_2"
+
+										);
+
+
+
+
+G2PVPlacement* scint_place_2 = nullptr;
+	scint_place_2 = new G2PVPlacement	( scint_rot2,
+									G2ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_2",
+									scint_logic_2,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G2VisAttributes* scint_vis_2= new G2VisAttributes(green);
+    scint_vis_2->SetVisibility(true);
+    scint_logic_2->SetVisAttributes(scint_vis_2);
+
+//scint 3
+
+G4Cons* scint_object_3 = new GCons(	"scint_place_3",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_3 = nullptr;
+	scint_logic_3 = new G4LogicalVolume (	scint_object_3,
+										fPstyrene,
+										"scint_logical_3"
+
+										);
+
+
+
+
+G3PVPlacement* scint_place_3 = nullptr;
+	scint_place_3 = new G3PVPlacement	( scint_rot3,
+									G3ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_3",
+									scint_logic_3,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G3VisAttributes* scint_vis_3= new G3VisAttributes(green);
+    scint_vis_3->SetVisibility(true);
+    scint_logic_3->SetVisAttributes(scint_vis_3);
+
+//scint 4
+
+G4Cons* scint_object_4 = new GCons(	"scint_place_4",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_4 = nullptr;
+	scint_logic_4 = new G4LogicalVolume (	scint_object_4,
+										fPstyrene,
+										"scint_logical_4"
+
+										);
+
+
+
+
+G4PVPlacement* scint_place_4 = nullptr;
+	scint_place_4 = new G4PVPlacement	( scint_rot4,
+									G4ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_4",
+									scint_logic_4,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G4VisAttributes* scint_vis_4= new G4VisAttributes(green);
+    scint_vis_4->SetVisibility(true);
+    scint_logic_4->SetVisAttributes(scint_vis_4);
+
+//scint 5
+
+G4Cons* scint_object_5 = new GCons(	"scint_place_5",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_5 = nullptr;
+	scint_logic_5 = new G4LogicalVolume (	scint_object_5,
+										fPstyrene,
+										"scint_logical_5"
+
+										);
+
+
+
+
+G5PVPlacement* scint_place_5 = nullptr;
+	scint_place_5 = new G5PVPlacement	( scint_rot5,
+									G5ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_5",
+									scint_logic_5,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G5VisAttributes* scint_vis_5= new G5VisAttributes(green);
+    scint_vis_5->SetVisibility(true);
+    scint_logic_5->SetVisAttributes(scint_vis_5);
+
+//scint 6
+
+G4Cons* scint_object_6 = new GCons(	"scint_place_6",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_6 = nullptr;
+	scint_logic_6 = new G4LogicalVolume (	scint_object_6,
+										fPstyrene,
+										"scint_logical_6"
+
+										);
+
+
+
+
+G6PVPlacement* scint_place_6 = nullptr;
+	scint_place_6 = new G6PVPlacement	( scint_rot6,
+									G6ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_6",
+									scint_logic_6,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G6VisAttributes* scint_vis_6= new G6VisAttributes(green);
+    scint_vis_6->SetVisibility(true);
+    scint_logic_6->SetVisAttributes(scint_vis_6);
+
+//scint 7
+
+G4Cons* scint_object_7 = new GCons(	"scint_place_7",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_7 = nullptr;
+	scint_logic_7 = new G4LogicalVolume (	scint_object_7,
+										fPstyrene,
+										"scint_logical_7"
+
+										);
+
+
+
+
+G7PVPlacement* scint_place_7 = nullptr;
+	scint_place_7 = new G7PVPlacement	( scint_rot7,
+									G7ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_7",
+									scint_logic_7,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G7VisAttributes* scint_vis_7= new G7VisAttributes(green);
+    scint_vis_7->SetVisibility(true);
+    scint_logic_7->SetVisAttributes(scint_vis_7);
+
+//scint 8
+
+G4Cons* scint_object_8 = new GCons(	"scint_place_8",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_8 = nullptr;
+	scint_logic_8 = new G4LogicalVolume (	scint_object_8,
+										fPstyrene,
+										"scint_logical_8"
+
+										);
+
+
+
+
+G8PVPlacement* scint_place_8 = nullptr;
+	scint_place_8 = new G8PVPlacement	( scint_rot8,
+									G8ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_8",
+									scint_logic_8,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G8VisAttributes* scint_vis_8= new G8VisAttributes(green);
+    scint_vis_8->SetVisibility(true);
+    scint_logic_8->SetVisAttributes(scint_vis_8);
+
+//scint 9
+
+G4Cons* scint_object_9 = new GCons(	"scint_place_9",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_9 = nullptr;
+	scint_logic_9 = new G4LogicalVolume (	scint_object_9,
+										fPstyrene,
+										"scint_logical_9"
+
+										);
+
+
+
+
+G9PVPlacement* scint_place_9 = nullptr;
+	scint_place_9 = new G9PVPlacement	( scint_rot9,
+									G9ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_9",
+									scint_logic_9,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G9VisAttributes* scint_vis_9= new G9VisAttributes(green);
+    scint_vis_9->SetVisibility(true);
+    scint_logic_9->SetVisAttributes(scint_vis_9);
+
+//scint 10
+
+G4Cons* scint_object_10 = new GCons(	"scint_place_10",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_10 = nullptr;
+	scint_logic_10 = new G4LogicalVolume (	scint_object_10,
+										fPstyrene,
+										"scint_logical_10"
+
+										);
+
+
+
+
+G10PVPlacement* scint_place_10 = nullptr;
+	scint_place_10 = new G10PVPlacement	( scint_rot10,
+									G10ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_10",
+									scint_logic_10,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G10VisAttributes* scint_vis_10= new G10VisAttributes(green);
+    scint_vis_10->SetVisibility(true);
+    scint_logic_10->SetVisAttributes(scint_vis_10);
+
+//scint 11
+
+G4Cons* scint_object_11 = new GCons(	"scint_place_11",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_11 = nullptr;
+	scint_logic_11 = new G4LogicalVolume (	scint_object_11,
+										fPstyrene,
+										"scint_logical_11"
+
+										);
+
+
+
+
+G11PVPlacement* scint_place_11 = nullptr;
+	scint_place_11 = new G11PVPlacement	( scint_rot11,
+									G11ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_11",
+									scint_logic_11,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G11VisAttributes* scint_vis_11= new G11VisAttributes(green);
+    scint_vis_11->SetVisibility(true);
+    scint_logic_11->SetVisAttributes(scint_vis_11);
+
+//scint 12
+
+G4Cons* scint_object_12 = new GCons(	"scint_place_12",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_12 = nullptr;
+	scint_logic_12 = new G4LogicalVolume (	scint_object_12,
+										fPstyrene,
+										"scint_logical_12"
+
+										);
+
+
+
+
+G12PVPlacement* scint_place_12 = nullptr;
+	scint_place_12 = new G12PVPlacement	( scint_rot12,
+									G12ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_12",
+									scint_logic_12,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G12VisAttributes* scint_vis_12= new G12VisAttributes(green);
+    scint_vis_12->SetVisibility(true);
+    scint_logic_12->SetVisAttributes(scint_vis_12);
+
+//scint 13
+
+G4Cons* scint_object_13 = new GCons(	"scint_place_13",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_13 = nullptr;
+	scint_logic_13 = new G4LogicalVolume (	scint_object_13,
+										fPstyrene,
+										"scint_logical_13"
+
+										);
+
+
+
+
+G13PVPlacement* scint_place_13 = nullptr;
+	scint_place_13 = new G13PVPlacement	( scint_rot13,
+									G13ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_13",
+									scint_logic_13,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G13VisAttributes* scint_vis_13= new G13VisAttributes(green);
+    scint_vis_13->SetVisibility(true);
+    scint_logic_13->SetVisAttributes(scint_vis_13);
+
+//scint 14
+
+G4Cons* scint_object_14 = new GCons(	"scint_place_14",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_14 = nullptr;
+	scint_logic_14 = new G4LogicalVolume (	scint_object_14,
+										fPstyrene,
+										"scint_logical_14"
+
+										);
+
+
+
+
+G14PVPlacement* scint_place_14 = nullptr;
+	scint_place_14 = new G14PVPlacement	( scint_rot14,
+									G14ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_14",
+									scint_logic_14,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G14VisAttributes* scint_vis_14= new G14VisAttributes(green);
+    scint_vis_14->SetVisibility(true);
+    scint_logic_14->SetVisAttributes(scint_vis_14);
+
+//scint 15
+
+G4Cons* scint_object_15 = new GCons(	"scint_place_15",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_15 = nullptr;
+	scint_logic_15 = new G4LogicalVolume (	scint_object_15,
+										fPstyrene,
+										"scint_logical_15"
+
+										);
+
+
+
+
+G15PVPlacement* scint_place_15 = nullptr;
+	scint_place_15 = new G15PVPlacement	( scint_rot15,
+									G15ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_15",
+									scint_logic_15,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G15VisAttributes* scint_vis_15= new G15VisAttributes(green);
+    scint_vis_15->SetVisibility(true);
+    scint_logic_15->SetVisAttributes(scint_vis_15);
+
+//scint 16
+
+G4Cons* scint_object_16 = new GCons(	"scint_place_16",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_16 = nullptr;
+	scint_logic_16 = new G4LogicalVolume (	scint_object_16,
+										fPstyrene,
+										"scint_logical_16"
+
+										);
+
+
+
+
+G16PVPlacement* scint_place_16 = nullptr;
+	scint_place_16 = new G16PVPlacement	( scint_rot16,
+									G16ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_16",
+									scint_logic_16,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G16VisAttributes* scint_vis_16= new G16VisAttributes(green);
+    scint_vis_16->SetVisibility(true);
+    scint_logic_16->SetVisAttributes(scint_vis_16);
+
+//scint 17
+
+G4Cons* scint_object_17 = new GCons(	"scint_place_17",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_17 = nullptr;
+	scint_logic_17 = new G4LogicalVolume (	scint_object_17,
+										fPstyrene,
+										"scint_logical_17"
+
+										);
+
+
+
+
+G17PVPlacement* scint_place_17 = nullptr;
+	scint_place_17 = new G17PVPlacement	( scint_rot17,
+									G17ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_17",
+									scint_logic_17,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G17VisAttributes* scint_vis_17= new G17VisAttributes(green);
+    scint_vis_17->SetVisibility(true);
+    scint_logic_17->SetVisAttributes(scint_vis_17);
+
+//scint 18
+
+G4Cons* scint_object_18 = new GCons(	"scint_place_18",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_18 = nullptr;
+	scint_logic_18 = new G4LogicalVolume (	scint_object_18,
+										fPstyrene,
+										"scint_logical_18"
+
+										);
+
+
+
+
+G18PVPlacement* scint_place_18 = nullptr;
+	scint_place_18 = new G18PVPlacement	( scint_rot18,
+									G18ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_18",
+									scint_logic_18,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G18VisAttributes* scint_vis_18= new G18VisAttributes(green);
+    scint_vis_18->SetVisibility(true);
+    scint_logic_18->SetVisAttributes(scint_vis_18);
+
+//scint 19
+
+G4Cons* scint_object_19 = new GCons(	"scint_place_19",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_19 = nullptr;
+	scint_logic_19 = new G4LogicalVolume (	scint_object_19,
+										fPstyrene,
+										"scint_logical_19"
+
+										);
+
+
+
+
+G19PVPlacement* scint_place_19 = nullptr;
+	scint_place_19 = new G19PVPlacement	( scint_rot19,
+									G19ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_19",
+									scint_logic_19,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G19VisAttributes* scint_vis_19= new G19VisAttributes(green);
+    scint_vis_19->SetVisibility(true);
+    scint_logic_19->SetVisAttributes(scint_vis_19);
+
+//scint 20
+
+G4Cons* scint_object_20 = new GCons(	"scint_place_20",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_20 = nullptr;
+	scint_logic_20 = new G4LogicalVolume (	scint_object_20,
+										fPstyrene,
+										"scint_logical_20"
+
+										);
+
+
+
+
+G20PVPlacement* scint_place_20 = nullptr;
+	scint_place_20 = new G20PVPlacement	( scint_rot20,
+									G20ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_20",
+									scint_logic_20,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G20VisAttributes* scint_vis_20= new G20VisAttributes(green);
+    scint_vis_20->SetVisibility(true);
+    scint_logic_20->SetVisAttributes(scint_vis_20);
+
+//scint 21
+
+G4Cons* scint_object_21 = new GCons(	"scint_place_21",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_21 = nullptr;
+	scint_logic_21 = new G4LogicalVolume (	scint_object_21,
+										fPstyrene,
+										"scint_logical_21"
+
+										);
+
+
+
+
+G21PVPlacement* scint_place_21 = nullptr;
+	scint_place_21 = new G21PVPlacement	( scint_rot21,
+									G21ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_21",
+									scint_logic_21,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G21VisAttributes* scint_vis_21= new G21VisAttributes(green);
+    scint_vis_21->SetVisibility(true);
+    scint_logic_21->SetVisAttributes(scint_vis_21);
+
+//scint 22
+
+G4Cons* scint_object_22 = new GCons(	"scint_place_22",
+				0,
+	40*mm,
+	0,
+	30*mm,
+	25*mm,
+	0,
+	360*deg
+	);
+
+
+ G4LogicalVolume* scint_logic_22 = nullptr;
+	scint_logic_22 = new G4LogicalVolume (	scint_object_22,
+										fPstyrene,
+										"scint_logical_22"
+
+										);
+
+
+
+
+G22PVPlacement* scint_place_22 = nullptr;
+	scint_place_22 = new G22PVPlacement	( scint_rot22,
+									G22ThreeVector (-123*mm, 0, 0*mm),
+									"scint_place_22",
+									scint_logic_22,
+									fExperimentalHall_phys,
+									false,
+									0
+	);
+
+    G22VisAttributes* scint_vis_22= new G22VisAttributes(green);
+    scint_vis_22->SetVisibility(true);
+    scint_logic_22->SetVisAttributes(scint_vis_22);
